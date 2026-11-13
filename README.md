@@ -62,7 +62,7 @@ Trial balance, income statement, balance sheet, tax report, chart of accounts da
 ├── assets/        # CSS, JS, icons
 ├── config/        # config.php (reads .env)
 ├── cron/          # Daily customer/supplier sync, payment reminders
-├── database/      # Incremental SQL migrations
+├── database/      # schema.sql (full structure) +
 ├── includes/      # ai_brain/, actions/, pos_sync/, auth, db, helpers
 ├── pages/         # Application screens
 ├── reports/       # Financial reports and exports
@@ -91,8 +91,7 @@ cp .env.example .env
 Place the full [TCPDF](https://github.com/tecnickcom/TCPDF) library in `vendor/tcpdf/`.
 
 **4. Database**
-Run the SQL files in `database/` in order (or use `admin/migrations.php`). They are incremental migrations on top of the base schema.
-
+Create an empty MySQL database, then import database/schema.sql (full structure plus the chart of accounts and tax settings). The other files in database/ are incremental migrations for upgrading older installs. The users table starts empty, so create your first admin user manually (password stored with PHP password_hash()).
 **5. WhatsApp webhook**
 Register `https://yourdomain.com/api/whatsapp_webhook.php` in your Meta app and subscribe to **messages**. See `WHATSAPP_SETUP.md`.
 
@@ -114,7 +113,7 @@ MIT — see [LICENSE](LICENSE).
 
 ## 👤 Author
 **Yazan Hamdi** — Full Stack AI Engineer
-[github.com/yazanhamde](https://github.com/yazanhamde) · [goldensketch.com/yazan-hamdi-demo](https://goldensketch.com/yazan-hamdi-demo/)
+[github.com/yazanhamde](https://github.com/yazanhamde) · [goldensketch.com/yazan-hamdi](https://goldensketch.com/yazan-hamdi)
 
 ---
 ---
