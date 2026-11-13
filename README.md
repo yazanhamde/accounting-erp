@@ -1,7 +1,7 @@
 # 📊 Accounting ERP + Arabic AI Assistant
 
 **English** | [العربية](#-نظام-محاسبة-erp-مع-مساعد-ذكي-بالعربية)
-
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Yazan%20Hamdi-blue?logo=linkedin)](https://www.linkedin.com/in/yazan-hamdi/)
 A PHP/MySQL accounting system built for a real trading business, with a conversational AI assistant that understands Arabic (Jordanian dialect) and turns plain messages — text, voice or receipt photos — into accounting entries that the owner confirms before anything is saved.
 
 > **Example:** the owner sends `"كليك دفعت للمورد أبو خالد 200"` on WhatsApp. The assistant identifies the bank, the supplier and the amount, asks for confirmation, and only then writes the entry.
