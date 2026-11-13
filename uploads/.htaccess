@@ -1,0 +1,11 @@
+# 🔒 ما في ولا ملف هون بينفتح مباشرة من المتصفح (لا صور ولا غيرها).
+# الصور بتنعرض بس عن طريق api/attachment.php بعد تسجيل الدخول.
+# (ملاحظة: لو الاستضافة Nginx بدل Apache، هالملف ما بيشتغل: لازم تمنع الوصول المباشر لـ /uploads من إعدادات Nginx)
+Options -Indexes
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>

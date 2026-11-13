@@ -1,0 +1,8 @@
+# سكربتات الكرون - ممنوع الوصول إلا للملفات المحمية بـ CRON_SECRET
+Require all denied
+<Files "cron_daily_suppliers_sync.php">
+    Require all granted
+</Files>
+<Files "cron_daily_customers_sync.php">
+    Require all granted
+</Files>

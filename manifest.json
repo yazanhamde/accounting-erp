@@ -1,0 +1,28 @@
+{
+  "name": "نظام المحاسبة الذكي",
+  "short_name": "المحاسبة",
+  "description": "نظام إدارة الذمم والحسابات البنكية والشيكات والأرباح",
+  "start_url": "/accounting-system/pages/dashboard.php",
+  "scope": "/accounting-system/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b1220",
+  "theme_color": "#16213a",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "/accounting-system/assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/accounting-system/assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "id": "/accounting-system/"
+}

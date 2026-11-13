@@ -1,0 +1,12 @@
+# منع الوصول لملف .env من المتصفح
+<Files ".env">
+    Require all denied
+</Files>
+<Files ".env.example">
+    Require all denied
+</Files>
+
+# منع فتح سكربتات الـ Cron من المتصفح مباشرة (تشتغل من كرون السيرفر بس)
+<Files "cron_reminders.php">
+    Require all denied
+</Files>

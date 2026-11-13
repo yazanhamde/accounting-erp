@@ -1,0 +1,8 @@
+.env
+uploads/*
+!uploads/.htaccess
+*.log
+logs/
+.DS_Store
+.idea/
+.vscode/
